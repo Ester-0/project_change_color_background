@@ -9,9 +9,8 @@ const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
 //AYUDA para que sea aleatorio: https://www.javatpoint.com/how-to-pick-random-elements-from-an-array
 
 
+
 function changeColor() {
-     
-    document.querySelector("body").style.backgroundColor = colors[Math.floor(Math.random() * colors.legth)];
-        
-           
-    }
+    const colorRandom = colors[Math.floor(Math.random() * colors.length)];
+       document.querySelector("body").style.backgroundColor = colorRandom;
+}
